@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             width: 100vw;
             height: 100vh;
@@ -9,14 +13,20 @@
             justify-content: center;
         }
 
-        body * {
-            box-sizing: border-box;
+        .label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 20px;
         }
 
         .container {
             width: 50%;
             max-width: 500px;
             aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
         }
 
         .logo {
@@ -113,12 +123,18 @@
 <body>
 
     <div class="container">
-        <div class="logo">
+        <section class="label">
+            Hover the icon for a smooth animation
+        </section>
+        <section class="logo">
             <div class="cube left">
                 <div class="cube inner"></div>
             </div>
             <div class="cube right"></div>
-        </div>
+        </section>
+        <section class="label">
+            Made by Oleksandr Faryna
+        </section>
     </div>
 
 </body>
